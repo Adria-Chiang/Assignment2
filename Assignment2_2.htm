@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>作業二之二</title>
+    <script type="text/javascript">
+    	var total = 0
+    	var ans = 0
+    	function avg(data){
+    		for (var i = 0; i < data["count"]; i ++){
+    			total += data["employees"][i]["salary"]
+    		}
+    		ans = total / data["count"]
+    		}
+
+    	avg({
+    		"count":3,"employees":[{"name":"John","salary":30000},{"name":"Bob","salary":60000},{"name":"Jenny","salary":50000}]});
+    </script>
+
+</head>
+<body></body>
+</html>

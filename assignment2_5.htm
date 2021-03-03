@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+	<title>作業二之五</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript">
+		function maxZeros(nums){
+			var cnt = 0
+			var box = []
+			
+			for (var i = 0; i < nums.length - 1; i ++){
+				if (nums[i] == 0){
+					cnt += 1					
+				}else{
+					box.push(cnt)
+					cnt = 0
+				}
+			}
+
+			if (nums[nums.length - 1] == 0){
+				cnt += 1
+				box.push(cnt)
+
+			}
+			return Math.max(...box)
+		}
+
+		maxZeros([0, 1, 0, 0])
+		maxZeros([1, 0, 0, 0, 0, 1, 0, 1, 0, 0])
+		maxZeros([1, 1, 1, 1])
+	</script>
+</head>
+<body></body>
+</html>

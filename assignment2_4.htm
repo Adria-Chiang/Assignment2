@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+	<title>作業二之四</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript">
+		var total = 0
+		function twoSum(nums, target){
+			for (var i = 0; i < nums.length; i ++){
+				for (var j = i + 1; j < nums.length; j ++){
+					total = (nums[i] + nums[j])
+					if (total == target){
+						var l = [i, j]
+						return l
+					}					
+					}					
+				}
+			}
+		result = twoSum([2, 11, 7, 15], 9)
+		console.log(result)
+	</script>
+</head>

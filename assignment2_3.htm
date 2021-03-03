@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+	<title>作業二之三</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript">
+		var mult = []
+		function maxProduct(nums){
+			for (var i = 0; i < nums.length; i ++){
+				for (var j = i + 1; j < nums.length; j ++){
+					mult.push(nums[i] * nums[j])
+				}
+			}
+			return Math.max(...mult)
+
+		}
+		maxProduct([5, 20, 2, 6]);
+		maxProduct([10, -20, 0, 3]);
+
+	</script>
+</head>
+<body></body>
+</html>
